@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 app = Flask(name)
-model = joblib.load("model.pkl") # Load your trained model
+model = joblib.load("model.pkl") # Load your model
 
 @app.route("/")
 def home():
@@ -21,4 +21,4 @@ except Exception as e:
 return jsonify({"error": str(e)})
 
 if name == "main":
-app.run(debug=True)
+app.run()
