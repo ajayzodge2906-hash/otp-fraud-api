@@ -7,7 +7,7 @@ model = joblib.load("model.pkl") # Load your model
 
 @app.route("/")
 def home():
-return "OTP Fraud Detection API is running!"
+ return "OTP Fraud Detection API is running!"
 
 @app.route("/predict", methods=["POST"])
 def predict():
