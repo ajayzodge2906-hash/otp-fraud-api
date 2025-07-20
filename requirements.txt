@@ -4,3 +4,4 @@ joblib
 scikit-learn
 gunicorn
 imbalanced-learn
+flask-cors
